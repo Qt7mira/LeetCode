@@ -35,6 +35,7 @@ public class P1_Two_Sum {
 			if (map.containsKey(target - nums[i])) {
 				result[0] = map.get(target - nums[i]);
 				result[1] = i;
+				break;
 			} else {
 				map.put(nums[i], i);
 			}
