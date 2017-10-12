@@ -26,7 +26,7 @@ public class P4_Median_of_Two_Sorted_Arrays {
 		 * 如3 + 1 / 2 = 2; 4 + 1 /2 = 2
 		 */
 		int iMin = 0, iMax = m, halfLen = (m + n + 1) / 2;
-		while (iMin < iMax) {
+		while (iMin <= iMax) {
 			int i = (iMax + iMin) / 2;
 			int j = halfLen - i;
 			if (i < iMax && nums2[j - 1] > nums1[i]) {
